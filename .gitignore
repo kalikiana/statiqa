@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2023 Liv Dywan <liv@twotoasts.de>
+#
+# SPDX-License-Identifier: EUPL-1.2
+
+.DS_Store
+__pycache__

@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2023 Liv Dywan <liv@twotoasts.de>
+#
+# SPDX-License-Identifier: EUPL-1.2
+
+---
+name: Static (openQA) test result visualization
+description: Render the results of test runs in your CI
+branding:
+  icon: 'check-circle'
+  color: 'blue'
+
+inputs:
+  results:
+    description: The folder with test results, sometimes called "pool" directory
+    required: false
+    default: 'pool'
+
+runs:
+  using: docker
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.results }}

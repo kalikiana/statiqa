@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2023 Liv Dywan <liv@twotoasts.de>
+#
+# SPDX-License-Identifier: EUPL-1.2
+
+[tool.poetry]
+name = "statiqa"
+version = "0.1.0"
+description = "Provide static (openQA) test result output"
+authors = ["Liv Dywan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+flake8-black = "^0.3.6"
+flake8-pylint = "^0.2.1"
+reuse = "^2.1.0"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+statiqa="statiqa.__main__:__main__"
